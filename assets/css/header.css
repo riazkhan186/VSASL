@@ -1,0 +1,436 @@
+/*================================================
+Navbar Area CSS
+=================================================*/
+a.meanmenu-reveal {
+  display: none;
+}
+
+.mean-container .mean-bar {
+  float: left;
+  width: 100%;
+  position: absolute;
+  background: transparent;
+  padding: 20px 0 0;
+  z-index: 2;
+  height: 60px;
+  text-transform: capitalize;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.mean-container .mean-bar * {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.mean-container a.meanmenu-reveal {
+  width: 35px;
+  height: 30px;
+  padding: 12px 15px 0 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  cursor: pointer;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: var(--mainColor);
+  text-decoration: none;
+  font-size: 16px;
+  text-indent: -9999em;
+  line-height: 22px;
+  font-size: 1px;
+  display: block;
+  font-weight: 700;
+}
+
+.mean-container a.meanmenu-reveal span {
+  display: block;
+  background: var(--mainColor);
+  height: 4px;
+  margin-top: 5px;
+  border-radius: 3px;
+}
+
+.mean-container .mean-nav {
+  float: left;
+  width: 100%;
+  background: var(--whiteColor);
+  margin-top: 64px;
+}
+
+.mean-container .mean-nav ul {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  border: none;
+  list-style-type: none;
+}
+
+.mean-container .mean-nav ul li {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.mean-container .mean-nav ul li a {
+  display: block;
+  float: left;
+  width: 90%;
+  padding: 1em 5%;
+  margin: 0;
+  text-align: left;
+  color: #677294;
+  border-top: 1px solid #dbeefd;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.mean-container .mean-nav ul li a:hover {
+  background: var(--whiteColor);
+}
+
+.mean-container .mean-nav ul li a.active {
+  color: var(--whiteColor);
+}
+
+.mean-container .mean-nav ul li li a {
+  width: 80%;
+  padding: 1em 10%;
+  color: #677294;
+  border-top: 1px solid #dbeefd;
+  opacity: 1;
+  filter: alpha(opacity=75);
+  text-shadow: none !important;
+  visibility: visible;
+  text-transform: none;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.mean-container .mean-nav ul li li li a {
+  width: 70%;
+  padding: 1em 15%;
+}
+
+.mean-container .mean-nav ul li li li li a {
+  width: 60%;
+  padding: 1em 20%;
+}
+
+.mean-container .mean-nav ul li li li li li a {
+  width: 50%;
+  padding: 1em 25%;
+}
+
+.mean-container .mean-nav ul li a.mean-expand {
+  margin-top: 3px;
+  width: 100%;
+  height: 24px;
+  padding: 12px !important;
+  text-align: right;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  font-weight: 700;
+  background: transparent !important;
+  border: none !important;
+}
+
+.mean-container .mean-nav ul li.mean-last a {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.mean-container .mean-nav .navbar-nav {
+  overflow-y: scroll;
+  height: 290px;
+}
+
+.mean-container .mean-push {
+  float: left;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  clear: both;
+}
+
+.mean-nav .wrapper {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.mean-nav .dropdown-toggle::after {
+  display: none;
+}
+
+.mean-remove {
+  display: none !important;
+}
+
+.mobile-nav {
+  display: none;
+  position: relative;
+}
+
+.btn-check:focus + .btn-primary,
+.btn-primary:focus {
+  background-color: var(--whiteColor);
+  color: var(--blackColor);
+}
+
+.btn-primary,
+.btn-primary:active {
+  background-color: var(--whiteColor) !important;
+  color: var(--blackColor) !important;
+  border-color: var(--blackColor) !important;
+}
+
+.mobile-nav.mean-container .mean-nav ul li a.active {
+  color: var(--mainColor);
+}
+
+/* Fix for box sizing on Foundation Framework etc. */
+.main-nav {
+  background-color: transparent;
+}
+
+.main-nav nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.main-nav nav .navbar-nav {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-nav nav .navbar-nav .nav-item {
+  position: relative;
+  padding: 15px 0;
+}
+
+.main-nav nav .navbar-nav .nav-item a {
+  padding: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+  position: relative;
+  color: var(--blackColor);
+  font-size: 15px;
+  font-weight: 600;
+  font-family: var(--fontFamily2);
+  margin-left: 14px;
+  margin-right: 14px;
+}
+
+.main-nav nav .navbar-nav .nav-item a i {
+  right: 0;
+  top: 8px;
+  font-size: 12px;
+  position: absolute;
+}
+
+.main-nav nav .navbar-nav .nav-item a:hover {
+  color: var(--mainColor);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main-nav nav .navbar-nav .nav-item a::after {
+  display: none;
+}
+
+.main-nav nav .navbar-nav .nav-item a.dropdown-toggle {
+  padding-right: 13px;
+}
+
+.main-nav nav .navbar-nav .nav-item a.active {
+  color: var(--mainColor);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main-nav nav .navbar-nav .nav-item:hover a {
+  color: var(--mainColor);
+}
+
+.main-nav nav .navbar-nav .nav-item:hover ul {
+  opacity: 1;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  visibility: visible;
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu {
+  left: 0;
+  top: 60px;
+  opacity: 0;
+  z-index: 99;
+  width: 200px;
+  border: none;
+  display: block;
+  border-radius: 0px;
+  visibility: hidden;
+  position: absolute;
+  -webkit-transform: rotateX(-20deg);
+          transform: rotateX(-20deg);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  background: var(--whiteColor);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  padding-top: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 10px;
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li {
+  position: relative;
+  padding: 0;
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li a {
+  margin: 0;
+  display: block;
+  padding: 7px 20px;
+  color: var(--blackColor);
+  border-bottom: 1px dashed transparent;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li a i {
+  top: 50%;
+  position: absolute;
+  right: 10px !important;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li a::before {
+  content: '+';
+  font-size: 0px;
+  color: var(--mainColor);
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 99;
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li a:hover, .main-nav nav .navbar-nav .nav-item .dropdown-menu li a.active {
+  color: var(--mainColor);
+  padding-left: 25px;
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li a:hover::before, .main-nav nav .navbar-nav .nav-item .dropdown-menu li a.active::before {
+  font-size: 15px;
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu {
+  position: absolute;
+  left: 101%;
+  top: 0;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu {
+  top: 20px;
+  left: 100%;
+  position: absolute;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a {
+  color: var(--blackColor);
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:hover, .main-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a.active {
+  color: var(--mainColor);
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li:hover .dropdown-menu {
+  opacity: 1 !important;
+  visibility: visible !important;
+  top: -5px !important;
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li:hover .dropdown-menu li:hover .dropdown-menu {
+  opacity: 1 !important;
+  visibility: visible !important;
+  top: -5px !important;
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li:hover a {
+  color: var(--mainColor);
+}
+
+.main-nav nav .navbar-nav .nav-item:last-child .dropdown-menu {
+  left: auto;
+  right: 0;
+}
+
+.navbar-light .navbar-brand {
+  color: var(--mainColor);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.navbar-light .navbar-brand:hover {
+  color: var(--mainColor);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.mean-container .mean-bar {
+  position: relative;
+}
+
+.mobile-nav .menu-sidebar-small-device {
+  display: none;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  position: absolute;
+  top: 15px;
+  right: 47px;
+}
+
+.mobile-nav .menu-sidebar-small-device .uni-button {
+  padding: 5px 10px;
+}
+
+.mobile-nav .call-button {
+  top: 7px;
+}
+
+.menu-sidebar ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-sidebar ul li {
+  margin-left: 15px;
+}
+
+body {
+  background-color: #000;
+}
+/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,97 @@
+@media only screen and (max-width: 767px) {
+  /*================================================
+    Default CSS
+    =================================================*/
+  :root {
+    --fontSize: 14px;
+    --card-title-fontSize: 18px;
+  }
+  .ptb-100 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .pt-100 {
+    padding-top: 50px;
+  }
+  .pb-100 {
+    padding-bottom: 50px;
+  }
+  .ptb-70 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .pt-70 {
+    padding-top: 20px;
+  }
+  .pb-70 {
+    padding-bottom: 20px;
+  }
+  .pt-30 {
+    padding-top: 30px;
+  }
+  .pl-20 {
+    padding-left: 0px;
+  }
+  .pr-20 {
+    padding-right: 0px;
+  }
+  .default-section-title h3 {
+    font-size: 20px;
+  }
+  .section-content {
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /*================================================
+    Default CSS
+    =================================================*/
+  :root {
+    --card-title-fontSize: 20px;
+  }
+  .ptb-100 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .pt-100 {
+    padding-top: 80px;
+  }
+  .pb-100 {
+    padding-bottom: 80px;
+  }
+  .ptb-70 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .pt-70 {
+    padding-top: 50px;
+  }
+  .pb-70 {
+    padding-bottom: 50px;
+  }
+  .pt-30 {
+    margin-top: 30px;
+  }
+  .pl-20, .pr-20 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .section-content {
+    margin-top: 0px;
+  }
+  .default-section-title h3 {
+    font-size: 29px;
+  }
+}
+
+@media only screen and (min-width: 1550px) {
+  .banner-area .banner-text-area {
+    padding-top: 280px;
+    padding-bottom: 280px;
+  }
+  .banner-area .banner-text-area h1 {
+    font-size: 74px;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

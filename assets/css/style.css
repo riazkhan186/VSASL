@@ -1,0 +1,1597 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+:root {
+  --fontFamily: 'Poppins', sans-serif;
+  --fontFamily2: 'Open Sans', sans-serif;
+  --mainColor: #f3615a;
+  --secondColor: #E93F5F;
+  --backgroundColor: #ebebeb;
+  --transparentColor: #fcebe5;
+  --whiteColor: #ffffff;
+  --blackColor: #242424;
+  --paragraphColor: #666666;
+  --box-shadow: 10px 10px -1px -1px #bbbbbb;
+  --fontSize: 15px;
+  --card-title-fontSize: 20px;
+  --transition: 0.5s;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--fontFamily);
+}
+
+h5, h6 {
+  font-family: var(--fontFamily2);
+}
+
+a {
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  color: var(--blackColor);
+  text-decoration: none;
+  outline: 0 !important;
+}
+
+a:hover {
+  color: var(--mainColor);
+  text-decoration: none;
+}
+
+:focus {
+  outline: 0 !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  color: var(--paragraphColor);
+  font-size: var(--fontSize);
+  margin-bottom: 15px;
+  line-height: 1.8;
+  font-family: var(--fontFamily2);
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+.ptb-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.pb-100 {
+  padding-bottom: 100px;
+}
+
+.ptb-70 {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.pt-70 {
+  padding-top: 70px;
+}
+
+.pb-70 {
+  padding-bottom: 70px;
+}
+
+.pt-30 {
+  padding-top: 0px;
+}
+
+.pl-20 {
+  padding-left: 20px;
+}
+
+.pr-20 {
+  padding-right: 20px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.ml-30 {
+  margin-left: 30px;
+}
+
+.mr-30 {
+  margin-right: 30px;
+}
+
+.section-content {
+  margin-top: 10px;
+}
+
+.bg-ebebeb {
+  background-color: #f9f9f9;
+}
+
+.sticky {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--whiteColor) !important;
+  z-index: 99999;
+  padding: 0px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+          box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+  -webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+          animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f5f4f4;
+  z-index: 20000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.default-button {
+  display: inline-block;
+  padding: 10px 35px;
+  margin-top: 30px;
+  border-radius: 25px;
+  overflow: hidden;
+  border: 1px solid var(--mainColor);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  color: var(--whiteColor) !important;
+  background-color: var(--mainColor);
+  position: relative;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: var(--fontFamily2);
+}
+
+.default-button::before {
+  content: '';
+  width: 100%;
+  height: 0%;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  background-color: var(--whiteColor);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.default-button span {
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  position: relative;
+  z-index: 2;
+}
+
+.default-button:hover::before {
+  height: 100%;
+}
+
+.default-button:hover span {
+  color: var(--mainColor) !important;
+}
+
+.section-middle-button-area {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.section-title {
+  margin-bottom: 20px;
+}
+
+.section-title h6 {
+  color: var(--mainColor);
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.section-title h3 {
+  margin-top: 15px;
+  font-size: 44px;
+  font-weight: 700;
+  font-family: var(--fontFamily);
+}
+
+.section-title-middle {
+  text-align: center;
+}
+
+/*================================================
+Navbar Area CSS
+=================================================*/
+a.meanmenu-reveal {
+  display: none;
+}
+
+.mean-container .mean-bar {
+  float: left;
+  width: 100%;
+  position: absolute;
+  background: transparent;
+  padding: 20px 0 0;
+  z-index: 2;
+  height: 60px;
+  text-transform: capitalize;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.mean-container .mean-bar * {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.mean-container a.meanmenu-reveal {
+  width: 35px;
+  height: 30px;
+  padding: 12px 15px 0 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  cursor: pointer;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: var(--mainColor);
+  text-decoration: none;
+  font-size: 16px;
+  text-indent: -9999em;
+  line-height: 22px;
+  font-size: 1px;
+  display: block;
+  font-weight: 700;
+}
+
+.mean-container a.meanmenu-reveal span {
+  display: block;
+  background: var(--mainColor);
+  height: 4px;
+  margin-top: 5px;
+  border-radius: 3px;
+}
+
+.mean-container .mean-nav {
+  float: left;
+  width: 100%;
+  background: var(--whiteColor);
+  margin-top: 64px;
+}
+
+.mean-container .mean-nav ul {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  border: none;
+  list-style-type: none;
+}
+
+.mean-container .mean-nav ul li {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.mean-container .mean-nav ul li a {
+  display: block;
+  float: left;
+  width: 90%;
+  padding: 1em 5%;
+  margin: 0;
+  text-align: left;
+  color: #677294;
+  border-top: 1px solid #dbeefd;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.mean-container .mean-nav ul li a:hover {
+  background: var(--whiteColor);
+}
+
+.mean-container .mean-nav ul li a.active {
+  color: var(--whiteColor);
+}
+
+.mean-container .mean-nav ul li li a {
+  width: 80%;
+  padding: 1em 10%;
+  color: #677294;
+  border-top: 1px solid #dbeefd;
+  opacity: 1;
+  filter: alpha(opacity=75);
+  text-shadow: none !important;
+  visibility: visible;
+  text-transform: none;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.mean-container .mean-nav ul li li li a {
+  width: 70%;
+  padding: 1em 15%;
+}
+
+.mean-container .mean-nav ul li li li li a {
+  width: 60%;
+  padding: 1em 20%;
+}
+
+.mean-container .mean-nav ul li li li li li a {
+  width: 50%;
+  padding: 1em 25%;
+}
+
+.mean-container .mean-nav ul li a.mean-expand {
+  margin-top: 3px;
+  width: 100%;
+  height: 24px;
+  padding: 12px !important;
+  text-align: right;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  font-weight: 700;
+  background: transparent !important;
+  border: none !important;
+}
+
+.mean-container .mean-nav ul li.mean-last a {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.mean-container .mean-nav .navbar-nav {
+  overflow-y: scroll;
+  height: 290px;
+}
+
+.mean-container .mean-push {
+  float: left;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  clear: both;
+}
+
+.mean-nav .wrapper {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.mean-nav .dropdown-toggle::after {
+  display: none;
+}
+
+.mean-remove {
+  display: none !important;
+}
+
+.mobile-nav {
+  display: none;
+  position: relative;
+}
+
+.btn-check:focus + .btn-primary,
+.btn-primary:focus {
+  background-color: var(--whiteColor);
+  color: var(--blackColor);
+}
+
+.btn-primary,
+.btn-primary:active {
+  background-color: var(--whiteColor) !important;
+  color: var(--blackColor) !important;
+  border-color: var(--blackColor) !important;
+}
+
+.mobile-nav.mean-container .mean-nav ul li a.active {
+  color: var(--mainColor);
+}
+
+/* Fix for box sizing on Foundation Framework etc. */
+.main-nav {
+  background-color: transparent;
+}
+
+.main-nav nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.main-nav nav .navbar-nav {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-nav nav .navbar-nav .nav-item {
+  position: relative;
+  padding: 15px 0;
+}
+
+.main-nav nav .navbar-nav .nav-item a {
+  padding: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+  position: relative;
+  color: var(--blackColor);
+  font-size: 15px;
+  font-weight: 600;
+  font-family: var(--fontFamily2);
+  margin-left: 14px;
+  margin-right: 14px;
+}
+
+.main-nav nav .navbar-nav .nav-item a i {
+  right: 0;
+  top: 8px;
+  font-size: 12px;
+  position: absolute;
+}
+
+.main-nav nav .navbar-nav .nav-item a:hover {
+  color: var(--mainColor);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main-nav nav .navbar-nav .nav-item a::after {
+  display: none;
+}
+
+.main-nav nav .navbar-nav .nav-item a.dropdown-toggle {
+  padding-right: 13px;
+}
+
+.main-nav nav .navbar-nav .nav-item a.active {
+  color: var(--mainColor);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main-nav nav .navbar-nav .nav-item:hover a {
+  color: var(--mainColor);
+}
+
+.main-nav nav .navbar-nav .nav-item:hover ul {
+  opacity: 1;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  visibility: visible;
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu {
+  left: 0;
+  top: 60px;
+  opacity: 0;
+  z-index: 99;
+  width: 200px;
+  border: none;
+  display: block;
+  border-radius: 0px;
+  visibility: hidden;
+  position: absolute;
+  -webkit-transform: rotateX(-20deg);
+          transform: rotateX(-20deg);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  background: var(--whiteColor);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  padding-top: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 10px;
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li {
+  position: relative;
+  padding: 0;
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li a {
+  margin: 0;
+  display: block;
+  padding: 7px 20px;
+  color: var(--blackColor);
+  border-bottom: 1px dashed transparent;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li a i {
+  top: 50%;
+  position: absolute;
+  right: 10px !important;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li a::before {
+  content: '+';
+  font-size: 0px;
+  color: var(--mainColor);
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 99;
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li a:hover, .main-nav nav .navbar-nav .nav-item .dropdown-menu li a.active {
+  color: var(--mainColor);
+  padding-left: 25px;
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li a:hover::before, .main-nav nav .navbar-nav .nav-item .dropdown-menu li a.active::before {
+  font-size: 15px;
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu {
+  position: absolute;
+  left: 101%;
+  top: 0;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu {
+  top: 20px;
+  left: 100%;
+  position: absolute;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a {
+  color: var(--blackColor);
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:hover, .main-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a.active {
+  color: var(--mainColor);
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li:hover .dropdown-menu {
+  opacity: 1 !important;
+  visibility: visible !important;
+  top: -5px !important;
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li:hover .dropdown-menu li:hover .dropdown-menu {
+  opacity: 1 !important;
+  visibility: visible !important;
+  top: -5px !important;
+}
+
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li:hover a {
+  color: var(--mainColor);
+}
+
+.main-nav nav .navbar-nav .nav-item:last-child .dropdown-menu {
+  left: auto;
+  right: 0;
+}
+
+.navbar-light .navbar-brand {
+  color: var(--mainColor);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.navbar-light .navbar-brand:hover {
+  color: var(--mainColor);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.mean-container .mean-bar {
+  position: relative;
+}
+
+.mobile-nav .menu-sidebar-small-device {
+  display: none;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  position: absolute;
+  top: 15px;
+  right: 47px;
+}
+
+.mobile-nav .menu-sidebar-small-device .uni-button {
+  padding: 5px 10px;
+}
+
+.mobile-nav .call-button {
+  top: 7px;
+}
+
+.menu-sidebar ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-sidebar ul li {
+  margin-left: 15px;
+}
+
+/*================================================
+Header Responsive Area CSS
+=================================================*/
+@media only screen and (max-width: 767px) {
+  .topbar-right-side {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .topbar-left-side {
+    text-align: center;
+  }
+  .topbar-left-side ul li {
+    margin-right: 7px;
+    margin-left: 7px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .topbar-right-side {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .topbar-left-side {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .main-nav nav .navbar-nav .nav-item a {
+    font-size: 14px;
+    margin-left: 13px;
+    margin-right: 13px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .main-responsive-nav {
+    background-color: #ffffff;
+    height: 65px;
+  }
+  .mobile-nav {
+    display: block;
+    position: relative;
+  }
+  .mobile-nav .logo {
+    top: 10px;
+    left: 0px;
+    z-index: 999;
+    position: absolute;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .mobile-nav nav .navbar-nav .nav-item a i {
+    display: none;
+  }
+  .mean-container .mean-bar {
+    background-color: #ffffff;
+    padding: 0;
+  }
+  .mean-container a.meanmenu-reveal {
+    padding: 5px 2px 0 0;
+  }
+  .main-nav {
+    display: none !important;
+  }
+  .menu-sidebar {
+    display: none;
+  }
+  .menu-small-device {
+    z-index: 0;
+    right: 55px;
+    top: 18px;
+    display: block !important;
+  }
+  .menu-small-device .default-button {
+    padding: 7px 10px;
+    font-size: 14px;
+  }
+  .topbar-left-area {
+    text-align: center;
+  }
+  .topbar-left-area ul li {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .mobile-nav .call-button {
+    top: 0;
+  }
+}
+
+/*================================================
+Home Page Banner Area CSS
+=================================================*/
+.banner-area {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/hero1.jpg);
+}
+
+.banner-area::before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+}
+
+.banner-area .banner-text-area {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  padding-top: 180px;
+  padding-bottom: 180px;
+}
+
+.banner-area .banner-text-area h3 {
+  color: var(--whiteColor);
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.banner-area .banner-text-area h1 {
+  color: var(--mainColor);
+  margin-top: 25px;
+  margin-bottom: 30px;
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.banner-area .banner-text-area h1 span {
+  color: var(--mainColor);
+}
+
+.banner-area .banner-text-area h5 {
+  color: var(--whiteColor);
+}
+
+/*================================================
+About Area CSS
+=================================================*/
+.index-about-img-area {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/about1.jpg);
+  height: 100%;
+}
+
+.index-about-img-area img {
+  display: none;
+}
+
+/*================================================
+Services Area CSS
+=================================================*/
+.service-card {
+  margin-top: 30px;
+  padding: 30px 20px 25px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+  background-color: var(--whiteColor);
+}
+
+.service-card i {
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  color: var(--mainColor);
+  font-size: 36px;
+  line-height: 1;
+}
+
+.service-card h3 {
+  margin-top: 20px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  font-size: var(--card-title-fontSize);
+  font-weight: 600;
+}
+
+.service-card h3 a {
+  color: var(--blackColor);
+}
+
+.service-card:hover {
+  background-color: var(--secondColor);
+}
+
+.service-card:hover i {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.service-card:hover i, .service-card:hover h3, .service-card:hover a {
+  color: var(--whiteColor);
+}
+
+/*================================================
+COunter Area CSS
+=================================================*/
+.counter-card {
+  background-color: #f9f9f9;
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+  padding: 25px 30px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.counter-card i {
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  color: var(--mainColor);
+  margin-bottom: 10px;
+  line-height: 1;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.counter-card h2 {
+  font-size: 36px;
+  font-weight: 700;
+  font-family: var(--fontFamily);
+}
+
+.counter-card p {
+  color: var(--var(--blackColor));
+  font-weight: 500;
+  font-size: var(--fontSize);
+  font-family: var(--fontFamily2);
+}
+
+.counter-card:hover {
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+}
+
+.counter-card:hover i {
+  color: var(--secondColor);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+/*================================================
+Why Choose Us Area CSS
+=================================================*/
+.why-we-card {
+  margin-top: 30px;
+  padding: 25px 20px;
+  text-align: center;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  background-color: var(--whiteColor);
+}
+
+.why-we-card h3 {
+  margin-bottom: 20px;
+  font-size: var(--card-title-fontSize);
+  font-weight: 700;
+}
+
+.why-we-card img {
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+
+.why-we-card:hover {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+}
+
+/*================================================
+Blog Area CSS
+=================================================*/
+.blog-card {
+  margin-top: 30px;
+  position: relative;
+  background-color: var(--backgroundColor);
+}
+
+.blog-card .blog-img-area {
+  position: relative;
+  z-index: 2;
+}
+
+.blog-card .blog-text-area {
+  padding: 30px 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.blog-card .blog-text-area h3 {
+  margin-bottom: 15px;
+  color: var(--blackColor);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  font-size: var(--card-title-fontSize);
+  font-weight: 700;
+}
+
+.blog-card .blog-text-area p {
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.blog-card .blog-text-area .read-more-btn {
+  color: var(--mainColor);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.blog-card::before {
+  content: '';
+  width: 100%;
+  height: 0%;
+  background-color: var(--mainColor);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.blog-card:hover::before {
+  height: 100%;
+}
+
+.blog-card:hover .blog-text-area h3, .blog-card:hover .blog-text-area a, .blog-card:hover .blog-text-area p, .blog-card:hover .blog-text-area .read-more-btn {
+  color: var(--whiteColor);
+}
+
+/*================================================
+Footer Area CSS
+=================================================*/
+.footer-bg {
+  background-image: -webkit-gradient(linear, left top, right top, from(#f3615a), color-stop(#a31f18d8), color-stop(#a31f18d8), to(#f3615a));
+  background-image: linear-gradient(to right, #f3615a, #a31f18d8, #a31f18d8, #f3615a);
+}
+
+.footer-logo-area p {
+  color: var(--whiteColor);
+}
+
+.footer-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer-logo h1 {
+  line-height: 1;
+  margin-bottom: 0;
+  padding-top: 17px;
+  padding-left: 10px;
+  color: var(--whiteColor);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.footer-social-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+.footer-social-area h6 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 0;
+  color: var(--whiteColor);
+  margin-right: 10px;
+}
+
+.footer-social-area ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-social-area ul li {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.footer-social-area ul li a {
+  width: 30px;
+  height: 30px;
+  padding-top: 1px;
+  font-size: 15px;
+  border-radius: 50%;
+  color: var(--mainColor);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  border: 1px solid var(--whiteColor);
+  background-color: var(--whiteColor);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-social-area ul li a:hover {
+  background-color: var(--secondColor);
+  color: var(--whiteColor);
+}
+
+.footer-option-area h3 {
+  color: var(--whiteColor);
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font: 100;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.footer-option-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-option-list li {
+  position: relative;
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.footer-option-list li::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+  background-color: var(--whiteColor);
+  position: absolute;
+  left: 0;
+  top: 53%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.footer-option-list li a {
+  color: var(--whiteColor);
+  font-size: 15px;
+  font-family: var(--fontFamily2);
+}
+
+.footer-option-list li a:hover {
+  letter-spacing: 1.1px;
+}
+
+.footer-option-list li:hover::before {
+  -webkit-transform: translateY(-50%) rotateX(180deg);
+          transform: translateY(-50%) rotateX(180deg);
+}
+
+.pl-70 {
+  padding-left: 70px;
+}
+
+.footer-contact {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-contact li {
+  position: relative;
+  margin-top: 15px;
+  padding-left: 27px;
+}
+
+.footer-contact li i {
+  color: var(--whiteColor);
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+  font-size: 18px;
+  position: absolute;
+  left: 0;
+  top: 3px;
+}
+
+.footer-contact li a {
+  color: var(--whiteColor);
+  font-size: 15px;
+  font-weight: 600;
+  font-family: var(--fontFamily2);
+}
+
+.footer-contact li:hover i {
+  color: var(--mainColor);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.copyright {
+  text-align: center;
+}
+
+.copyright .container {
+  border-top: 1px solid #ffffff50;
+}
+
+.copyright p {
+  color: var(--whiteColor);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.copyright p a {
+  color: var(--whiteColor);
+}
+
+/*================================================
+Inner Pages Banner Area CSS
+=================================================*/
+.inner-banner {
+  position: relative;
+  background-image: url("../images/uni-banner-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.inner-banner::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.inner-banner-text-area {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  padding-top: 100px;
+  padding-bottom: 95px;
+}
+
+.inner-banner-text-area h1 {
+  color: var(--whiteColor);
+  margin-bottom: 0;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+/*================================================
+BO Account Opening Area CSS
+=================================================*/
+.BO-account .notice {
+  color: var(--mainColor);
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.bo-account-content {
+  margin-top: 30px;
+}
+
+.bo-account-content .nav {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bo-account-content .nav .nav-link {
+  background-color: var(--backgroundColor);
+  color: var(--mainColor);
+  margin: 5px 10px;
+  font-size: var(--fontSize);
+  font-weight: 600;
+  font-family: var(--fontFamily2);
+}
+
+.bo-account-content .nav .active {
+  background-color: var(--mainColor);
+  color: var(--whiteColor);
+}
+
+.bo-account-content .tab-content {
+  margin-top: 30px;
+}
+
+.bo-account-content .tab-content .bo-opening-tab-content h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.bo-account-content .tab-content .bo-opening-tab-content .bo-opening-document-list {
+  margin: 10px 0 0;
+  padding-left: 15px;
+  list-style: order;
+}
+
+.bo-account-content .tab-content .bo-opening-tab-content .bo-opening-document-list li {
+  margin-top: 12px;
+  font-size: var(--fontSize);
+  font-family: var(--fontFamily2);
+}
+
+.bo-account-content .tab-content .bo-opening-tab-content .bo-opening-document-list li span {
+  font-size: 13px;
+}
+
+/*================================================
+Online Trading Area CSS
+=================================================*/
+.online-trading h6 {
+  margin-bottom: 25px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.online-trading h4 {
+  margin-top: 16px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.online-trading-content {
+  max-width: 800px;
+}
+
+.online-trading-content ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.online-trading-content ul li {
+  position: relative;
+  padding-left: 20px;
+  margin-top: 10px;
+  font-size: var(--fontSize);
+  font-family: var(--fontFamily2);
+}
+
+.online-trading-content ul li::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--mainColor);
+  position: absolute;
+  left: 0;
+  top: 7px;
+}
+
+.online-trading-content ul li a {
+  font-weight: 600;
+}
+
+/*================================================
+DP Services Area CSS
+=================================================*/
+.dp-service-content {
+  max-width: 750px;
+}
+
+.dp-service-content h6 {
+  margin-bottom: 25px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.dp-service-content ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dp-service-content ul li {
+  position: relative;
+  padding-left: 20px;
+  margin-top: 10px;
+  font-size: var(--fontSize);
+  font-family: var(--fontFamily2);
+}
+
+.dp-service-content ul li::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  background-color: var(--mainColor);
+  border: 1px solid var(--mainColor);
+  border-radius: 0px;
+  position: absolute;
+  left: 0;
+  top: 7px;
+}
+
+.dp-service-content ul li:hover::before {
+  border-radius: 50%;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  background-color: var(--whiteColor);
+}
+
+/*================================================
+Fund Transfers Area CSS
+=================================================*/
+.fund-transfer-content .nav {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 0px;
+}
+
+.fund-transfer-content .nav .nav-link {
+  background-color: var(--backgroundColor);
+  border: 0;
+  margin: 5px 10px;
+  padding: 8px 30px;
+  color: var(--mainColor);
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: var(--fontSize);
+  font-family: var(--fontFamily2);
+}
+
+.fund-transfer-content .nav .active {
+  background-color: var(--mainColor);
+  color: var(--whiteColor);
+}
+
+.fund-transfer-content form {
+  margin-top: 15px;
+}
+
+.fund-transfer-content form .fund-transfer-input-card {
+  margin-top: 15px;
+}
+
+.fund-transfer-content form .fund-transfer-input-card .form-label {
+  margin-bottom: 5px;
+}
+
+.fund-transfer-content form .fund-transfer-input-card .form-label sup {
+  color: red;
+  position: relative;
+  top: 1px;
+  font-size: 18px;
+}
+
+.fund-transfer-content form .fund-transfer-input-card .form-control {
+  padding: 6px 15px !important;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  font-family: var(--fontFamily2);
+  font-size: var(--fontSize);
+  font-weight: 400;
+}
+
+.fund-deposit-tab {
+  margin-top: 30px;
+}
+
+.fund-deposit-tab h5 {
+  line-height: 1.5;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: var(--fontFamily2);
+}
+
+.fund-deposit-tab h3 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: var(--fontFamily);
+}
+
+.fund-deposit-tab h6 {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: var(--fontFamily2);
+}
+
+.bank-details-area h3 {
+  margin-top: 0;
+}
+
+.bank-details-area ul {
+  margin: 15px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.bank-details-area ul li {
+  position: relative;
+  margin-top: 5px;
+  padding-left: 135px;
+  font-size: 15px;
+  font-family: var(--fontFamily2);
+}
+
+.bank-details-area ul li::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--mainColor);
+  border: 1px solid var(--mainColor);
+  position: absolute;
+  left: 0;
+  top: 7px;
+}
+
+.bank-details-area ul li span {
+  display: inline-block;
+  width: 115px;
+  position: absolute;
+  left: 15px;
+}
+
+.fund-withdraw-tab {
+  margin-top: 30px;
+}
+
+.fund-withdraw-tab h3 {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: var(--fontFamily2);
+}
+
+.fund-withdraw-tab p sup {
+  color: red;
+}
+
+.fund-withdraw-tab .requisition-slip {
+  position: relative;
+  padding-left: 20px;
+}
+
+.fund-withdraw-tab .requisition-slip::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--mainColor);
+  position: absolute;
+  left: 0;
+  top: 7px;
+}
+
+.fund-withdrawal-form p {
+  margin-bottom: 0;
+}
+
+.fund-withdrawal-form form {
+  margin-top: 0;
+}
+
+.fund-withdrawal-form .fund-transfer-input-card {
+  margin-top: 15px;
+}
+
+.fund-withdrawal-form .fund-transfer-input-card .form-control {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.withdrawal-slip-area {
+  margin-top: 30px;
+}
+
+/*================================================
+FAQ Area CSS
+=================================================*/
+.faq-content .accordion-item {
+  border: 0px;
+}
+
+.faq-content .accordion-item .accordion-body {
+  -webkit-box-shadow: 0px -2px 10px -5px #666666;
+          box-shadow: 0px -2px 10px -5px #666666;
+  padding: 10px 15px;
+}
+
+.faq-content .accordion-item .accordion-body p {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: var(--fontFamily2);
+}
+
+.faq-content .accordion-button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: 0px !important;
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+  background-color: rgba(0, 0, 0, 0.04);
+  font-weight: 600;
+  font-size: var(--fontSize);
+  font-family: var(--fontFamily2);
+}
+
+.faq-content .accordion-button:not(.collapsed) {
+  background-color: var(--mainColor);
+  color: var(--whiteColor);
+}
+/*# sourceMappingURL=style.css.map */

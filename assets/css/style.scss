@@ -1,0 +1,1013 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+:root {
+    --fontFamily: 'Poppins', sans-serif;
+    --fontFamily2: 'Open Sans', sans-serif;
+    --mainColor: #f3615a;
+    --secondColor: #E93F5F;
+    --backgroundColor: #ebebeb;
+    --transparentColor: #fcebe5;
+    --whiteColor: #ffffff;
+    --blackColor: #242424;
+    --paragraphColor: #666666;
+    --box-shadow: 10px 10px -1px -1px #bbbbbb;
+    --fontSize: 15px;
+    --card-title-fontSize: 20px;
+    --transition: 0.5s;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4{
+    font-family: var(--fontFamily);
+}
+h5,h6{
+    font-family: var(--fontFamily2);
+}
+a {
+    transition: var(--transition);
+    color: var(--blackColor);
+    text-decoration: none;
+    outline: 0 !important;
+
+    &:hover {
+        color: var(--mainColor);
+        text-decoration: none;
+    }
+}
+:focus {
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+p {
+    color: var(--paragraphColor);
+    font-size: var(--fontSize);
+    margin-bottom: 15px;
+    line-height: 1.8;
+    font-family: var(--fontFamily2);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+.ptb-100 {
+    padding: {
+        top: 100px;
+        bottom: 100px;
+    }
+}
+.pt-100 {
+    padding-top: 100px;
+}
+.pb-100 {
+    padding-bottom: 100px;
+}
+.ptb-70 {
+    padding: {
+        top: 70px;
+        bottom: 70px;
+    }
+}
+.pt-70 {
+    padding-top: 70px;
+}
+.pb-70 {
+    padding-bottom: 70px;
+}
+.pt-30{
+    padding-top: 0px;
+}
+.pl-20{
+    padding-left: 20px;
+}
+.pr-20{
+    padding-right: 20px;
+}
+.mt-30{
+    margin-top: 30px;
+}
+.ml-30 {
+    margin-left: 30px;
+}
+.mr-30 {
+    margin-right: 30px;
+}
+.section-content{
+    margin-top: 10px;
+}
+.bg-ebebeb {
+    background-color: #f9f9f9;
+}
+
+.sticky {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--whiteColor) !important;
+    z-index: 99999;
+    padding: 0px ;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+    animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f5f4f4;
+    z-index: 20000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.default-button {
+    display: inline-block;
+    padding: 10px 35px;
+    margin-top: 30px;
+    border-radius: 25px;
+    overflow: hidden;
+    border: 1px solid var(--mainColor);
+    transition: .5s ease-in-out;
+    color: var(--whiteColor) !important;
+    background-color: var(--mainColor);
+    position: relative;
+    &::before {
+        content: '';
+        width: 100%;
+        height: 0%;
+        transition: .5s ease-in-out;
+        background-color: var(--whiteColor);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    span {
+        transition: .5s ease-in-out;
+        position: relative;
+        z-index: 2;
+    }
+    font: {
+        size: 15px;
+        weight: 700;
+        family: var(--fontFamily2);
+    }
+    &:hover {
+        &::before {
+            height: 100%;
+        }
+        span {
+            color: var(--mainColor) !important;
+        }
+    }
+}
+
+.section-middle-button-area {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.section-title {
+    margin-bottom: 20px;
+    h6 {
+        color: var(--mainColor);
+        font: {
+            size: 17px;
+            weight: 700;
+        }
+    }
+    h3 {
+        margin-top: 15px;
+        font: {
+            size: 44px;
+            weight: 700;
+            family: var(--fontFamily);
+        }
+    }
+}
+.section-title-middle {
+    text-align: center
+}
+
+@import 'header';
+
+
+/*================================================
+Home Page Banner Area CSS
+=================================================*/
+.banner-area {
+    position: relative;
+    background: {
+        position: center;
+        size: cover;
+        repeat: no-repeat;
+        image: url(../images/hero1.jpg);
+    };
+    &::before {
+        content: '';
+        height: 100%;
+        width: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.7);
+        position: absolute;
+        
+    }
+    .banner-text-area {
+        text-align: center;
+        position: relative;
+        z-index: 2;
+        padding: {
+            top: 180px;
+            bottom: 180px;
+        };
+
+        h3 {
+            color: var(--whiteColor);
+            font: {
+                size: 24px;
+                weight: 500;
+            };
+        }
+        h1 {
+            color: var(--mainColor);
+            margin : {
+                top: 25px;
+                bottom: 30px;
+            }
+            font: {
+                size: 64px;
+                weight: 700;
+            };
+            span {
+                color: var(--mainColor);
+            }
+        }
+        h5 {
+            color: var(--whiteColor);
+        }
+    }
+}
+
+/*================================================
+About Area CSS
+=================================================*/
+.index-about-img-area {
+    position: relative;
+    background: {
+        position: center;
+        size: cover;
+        repeat: no-repeat;
+        image: url(../images/about1.jpg);
+    };
+    height: 100%;
+    img {
+        display: none;
+    }
+}
+
+/*================================================
+Services Area CSS
+=================================================*/
+.service-card {
+    margin-top: 30px;
+    padding: 30px 20px 25px;
+    transition: .5s ease-in-out;
+    box-shadow: var(--box-shadow);
+    background-color: var(--whiteColor);
+    i {
+        transition: .5s ease-in-out;
+        color: var(--mainColor);
+        font-size: 36px;
+        line-height: 1;
+    }
+    h3 {
+        margin-top: 20px;
+        transition: .5s ease-in-out;
+        a {
+            color: var(--blackColor);
+        }
+        font: {
+            size: var(--card-title-fontSize);
+            weight: 600;
+        };
+    }
+    &:hover {
+        background-color: var(--secondColor);
+        i {
+            transform: rotateY(180deg);
+        }
+        i,h3,a {
+            color: var(--whiteColor);
+        }
+    }
+}
+
+/*================================================
+COunter Area CSS
+=================================================*/
+.counter-card {
+    background-color: #f9f9f9;
+    box-shadow: var(--box-shadow);
+    padding: 25px 30px;
+    text-align: center;
+    margin-top: 30px;
+    i {
+
+        transition: .5s ease-in-out;
+        color: var(--mainColor);
+        margin-bottom: 10px;
+        line-height: 1;
+        font: {
+            size: 42px;
+            weight: 700;
+        };
+    }
+    h2 {
+        font: {
+            size: 36px;
+            weight: 700;
+            family: var(--fontFamily);
+        };
+    }
+    p {
+        color: var(--var(--blackColor));
+        font: {
+            weight: 500;
+            size: var(--fontSize);
+            family: var(--fontFamily2);
+        };
+    }
+    &:hover {
+        box-shadow: var(--box-shadow);
+        i {
+            color: var(--secondColor);
+            transform: rotateY(180deg);
+        }
+    }
+}
+
+/*================================================
+Why Choose Us Area CSS
+=================================================*/
+.why-we-card {
+    margin-top: 30px;
+    padding: 25px 20px;
+    text-align: center;
+    transition: .5s ease-in-out;
+    background-color: var(--whiteColor);
+    h3 {
+        margin-bottom: 20px;
+        font: {
+            size: var(--card-title-fontSize);
+            weight: 700;
+        };
+    }
+    img {
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+    &:hover {
+        transform: translateY(-15px);
+    }
+}
+
+/*================================================
+Blog Area CSS
+=================================================*/
+.blog-card {
+    margin-top: 30px;
+    position: relative;
+    background-color: var(--backgroundColor);
+    .blog-img-area {
+        position: relative;
+        z-index: 2;
+    }
+    .blog-text-area {
+        padding: 30px 20px;
+        position: relative;
+        z-index: 2;
+        h3 {
+            margin-bottom: 15px;
+            color: var(--blackColor);
+            transition: .5s ease-in-out;
+            font: {
+                size: var(--card-title-fontSize);
+                weight: 700;
+            };
+        }
+        p {
+            transition: .5s ease-in-out;
+        }
+        .read-more-btn {
+            color: var(--mainColor);
+            transition: .5s ease-in-out;
+        }
+    }
+    &::before {
+        content: '';
+        width: 100%;
+        height: 0%;
+        background-color: var(--mainColor);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        transition: .5s ease-in-out;
+    }
+    &:hover {
+        &::before {
+            height: 100%;
+        }
+        .blog-text-area {
+            h3,a,p,.read-more-btn {
+                color: var(--whiteColor);
+            }
+        }
+    }
+}
+
+/*================================================
+Footer Area CSS
+=================================================*/
+.footer-bg {
+    background-image: linear-gradient(to right, #f3615a, #a31f18d8, #a31f18d8, #f3615a);
+}
+.footer-logo-area {
+    p {
+        color: var(--whiteColor);
+    }
+}
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    h1 {
+        line-height: 1;
+        margin-bottom: 0;
+        padding-top: 17px;
+        padding-left: 10px;
+        color: var(--whiteColor);
+        font: {
+            size: 30px;
+            weight: 700;
+        }
+    }
+}
+.footer-social-area {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    h6 {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1;
+        margin-bottom: 0;
+        color: var(--whiteColor);
+        margin-right: 10px;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            display: inline-block;
+            margin-left: 5px;
+            a {
+                width: 30px;
+                height: 30px;
+                padding-top: 1px;
+                font-size: 15px;
+                border-radius: 50%;
+                color: var(--mainColor);
+                transition: .5s ease-in-out;
+                border: 1px solid var(--whiteColor);
+                background-color: var(--whiteColor);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &:hover {
+                    background-color: var(--secondColor);
+                    color: var(--whiteColor);
+                }
+            }
+        }
+    }
+}
+.footer-option-area {
+    h3 {
+        color: var(--whiteColor);
+        margin: {
+            top: 25px;
+            bottom: 25px;
+        };
+        font: 100{
+            size: 28px;
+            weight: 700;
+        };
+    }
+}
+.footer-option-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+        position: relative;
+        margin-top: 15px;
+        padding-left: 20px;
+        &::before {
+            content: '';
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            transition: .4s ease-in-out;
+            background-color: var(--whiteColor);
+            position: absolute;
+            left: 0;
+            top: 53%;
+            transform: translateY(-50%);
+        }
+        a {
+            color: var(--whiteColor);
+            font: {
+                size: 15px;
+                family: var(--fontFamily2);
+            };
+            &:hover {
+                letter-spacing: 1.1px;
+            }
+        }
+        &:hover {
+            &::before {
+                // background-color: var(--secondColor);
+                // width: 12px;
+                // height: 12px;
+                transform: translateY(-50%) rotateX(180deg);
+            }
+        }
+    }
+}
+.pl-70 {
+    padding-left: 70px;
+}
+.footer-contact {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+        position: relative;
+        margin-top: 15px;
+        padding-left: 27px;
+        i {
+            color: var(--whiteColor);
+            transition: .4s ease-in-out;
+            font-size: 18px;
+            position: absolute;
+            left: 0;
+            top: 3px;
+        }
+        a {
+            color: var(--whiteColor);
+            font: {
+                size: 15px;
+                weight: 600;
+                family: var(--fontFamily2);
+            };
+        }
+        &:hover {
+            i {
+                color: var(--mainColor);
+                transform: rotateY(180deg);
+            }
+        }
+    }
+}
+.copyright {
+    text-align: center;
+    .container {
+        border-top: 1px solid #ffffff50;
+    }
+    p {
+        color: var(--whiteColor);
+        padding: {
+            top: 10px;
+            bottom: 10px;
+        };
+        a {
+            color: var(--whiteColor);
+        }
+    }
+}
+
+/*================================================
+Inner Pages Banner Area CSS
+=================================================*/
+.inner-banner {
+    position: relative;
+    &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.8);
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 0;
+    }
+    
+    background: {
+        image: url('../images/uni-banner-bg.jpg');
+        repeat: no-repeat;
+        position: center;
+        size: cover;
+    };
+    
+}
+.inner-banner-text-area {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    padding: {
+        top: 100px;
+        bottom: 95px;
+    };
+    h1 {
+        color: var(--whiteColor);
+        margin-bottom: 0;
+        font: {
+            size: 42px;
+            weight: 700;
+        };
+    }
+}
+
+
+/*================================================
+BO Account Opening Area CSS
+=================================================*/
+.BO-account {
+    .notice {
+        color: var(--mainColor);
+        margin-top: 30px;
+        font: {
+            size: 20px;
+            weight: 600;
+        };
+    }
+}
+.bo-account-content {
+    margin-top: 30px;
+    .nav {
+        justify-content: center;
+        .nav-link {
+            background-color: var(--backgroundColor);
+            color: var(--mainColor);
+            margin: 5px 10px;
+            font: {
+                size: var(--fontSize);
+                weight: 600;
+                family: var(--fontFamily2);
+            };
+        }
+        .active {
+            background-color: var(--mainColor);
+            color: var(--whiteColor);
+        }
+    }
+
+    .tab-content {
+        margin-top: 30px;
+        .bo-opening-tab-content {
+            h3 {
+                margin-bottom: 10px;
+                font: {
+                    size: 20px;
+                    weight: 600;
+                };
+            }
+            .bo-opening-document-list {
+                margin: 10px 0 0;
+                padding-left: 15px;
+                list-style: order;
+                li {
+                    margin-top: 12px;
+                    font: {
+                        size: var(--fontSize);
+                        family: var(--fontFamily2);
+                    };
+                    span {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*================================================
+Online Trading Area CSS
+=================================================*/
+.online-trading {
+    h6 {
+        margin-bottom: 25px;
+        font: {
+            size: 16px;
+            weight: 600;
+        };
+    }
+    h4 {
+        margin-top: 16px;
+        font: {
+            size: 16px;
+            weight: 700;
+        };
+    }
+}
+.online-trading-content {
+    max-width: 800px;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            position: relative;
+            padding-left: 20px;
+            margin-top: 10px;
+            font: {
+                size: var(--fontSize);
+                family: var(--fontFamily2);
+            };
+            &::before {
+                content: '';
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: var(--mainColor);
+                position: absolute;
+                left: 0;
+                top: 7px;
+            }
+            a {
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+/*================================================
+DP Services Area CSS
+=================================================*/
+.dp-service-content {
+    max-width: 750px;
+    h6 {
+        margin-bottom: 25px;
+        font: {
+            size: 16px;
+            weight: 600;
+        };
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            position: relative;
+            padding-left: 20px;
+            margin-top: 10px;
+            font: {
+                size: var(--fontSize);
+                family: var(--fontFamily2);
+            };
+            &::before {
+                content: '';
+                width: 10px;
+                height: 10px;
+                transition: .5s ease-in-out;
+                background-color: var(--mainColor);
+                border: 1px solid var(--mainColor);
+                border-radius: 0px;
+                position: absolute;
+                left: 0;
+                top: 7px;
+            }
+            &:hover {
+                &::before {
+                    border-radius: 50%;
+                    transform: rotateY(180deg);
+                    background-color: var(--whiteColor);
+                }
+            }
+        }
+    }
+}
+
+/*================================================
+Fund Transfers Area CSS
+=================================================*/
+.fund-transfer-content {
+    .nav {
+        justify-content: center;
+        border: 0px;
+        .nav-link {
+            background-color: var(--backgroundColor);
+            border: 0;
+            margin: 5px 10px;
+            padding: 8px 30px;
+            color: var(--mainColor);
+            border-radius: 5px;
+            font: {
+                weight: 600;
+                size: var(--fontSize);
+                family: var(--fontFamily2);
+            };
+        }
+        .active {
+            background-color: var(--mainColor);
+            color: var(--whiteColor);
+        }
+    }
+    form {
+        margin-top: 15px;
+        .fund-transfer-input-card {
+            margin-top: 15px;
+            .form-label {
+                margin-bottom: 5px;
+                sup {
+                    color: red;
+                    position: relative;
+                    top: 1px;
+                    font-size: 18px;
+                }
+            }
+            .form-control {
+                padding: 6px 15px !important;
+                border: 1px solid rgba($color: #000000, $alpha: 0.3);
+                font: {
+                    family: var(--fontFamily2);
+                    size: var(--fontSize);
+                    weight: 400;
+                };
+            }
+        }
+    } 
+}
+.fund-deposit-tab {
+    margin-top: 30px;
+    h5 {
+        line-height: 1.5;
+        font: {
+            size: 17px;
+            weight: 500;
+            family: var(--fontFamily2);
+        };
+    }
+    h3 {
+        margin: {
+            top: 20px;
+            bottom: 5px;
+        };
+        font: {
+            size: 24px;
+            weight: 600;
+            family: var(--fontFamily);
+        };
+    }
+    h6 {
+        font: {
+            size: 15px;
+            weight: 400;
+            family: var(--fontFamily2);
+        };
+    }
+    
+}
+.bank-details-area {
+    h3 {
+        margin-top: 0;
+    }
+    ul{
+        margin: 15px 0 0;
+        padding: 0;
+        list-style: none;
+        li {
+            position: relative;
+            margin-top: 5px;
+            padding-left: 135px;
+            font: {
+                size: 15px;
+                family: var(--fontFamily2);
+            };
+            &::before {
+                content: '';
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: var(--mainColor);
+                border: 1px solid var(--mainColor);
+                position: absolute;
+                left: 0;
+                top: 7px;
+            }
+            span {
+                display: inline-block;
+                width: 115px;
+                position: absolute;
+                left: 15px;
+            }
+            
+        }
+    }
+}
+.fund-withdraw-tab {
+    margin-top: 30px;
+    h3 {
+        font: {
+            size: 24px;
+            weight: 600;
+            family: var(--fontFamily2);
+        };
+    }
+    p {
+        sup {
+            color: red;
+        }
+    }
+    .requisition-slip {
+        position: relative;
+        padding-left: 20px;
+        &::before {
+            content: '';
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: var(--mainColor);
+            position: absolute;
+            left: 0;
+            top: 7px;
+        }
+    }
+}
+.fund-withdrawal-form {
+    p {
+        margin-bottom: 0;
+    }
+    form {
+        margin-top: 0;
+    }
+    .fund-transfer-input-card {
+        margin-top: 15px;
+        .form-control {
+            border: 1px solid rgba($color: #000000, $alpha: 0.3);
+        }
+    }
+}
+.withdrawal-slip-area {
+    margin-top: 30px;
+}
+
+/*================================================
+FAQ Area CSS
+=================================================*/
+.faq-content {
+    .accordion-item {
+        border: 0px ;
+        .accordion-body {
+            box-shadow: 0px -2px 10px -5px #666666;
+            padding: 10px 15px;
+            p {
+                font: {
+                    size: 14px;
+                    weight: 400;
+                    family: var(--fontFamily2);
+                };
+            }
+        }
+    }
+    .accordion-button {
+        margin-top: 10px;
+        padding: 10px 15px;
+        border: 0px !important;
+        box-shadow: var(--box-shadow);
+        background-color: rgba($color: #000000, $alpha: 0.04);
+        font: {
+            weight: 600;
+            size: var(--fontSize);
+            family: var(--fontFamily2);
+        };
+    }
+    .accordion-button:not(.collapsed) {
+        background-color: var(--mainColor);
+        color: var(--whiteColor);
+    }
+}
