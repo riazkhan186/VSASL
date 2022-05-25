@@ -460,7 +460,7 @@ a.meanmenu-reveal {
 
 .main-nav nav .navbar-nav .nav-item a i {
   right: 0;
-  top: 8px;
+  top: 6px;
   font-size: 12px;
   position: absolute;
 }
@@ -869,7 +869,7 @@ Services Area CSS
 }
 
 /*================================================
-COunter Area CSS
+Counter Area CSS
 =================================================*/
 .counter-card {
   background-color: #f9f9f9;
@@ -967,8 +967,17 @@ Blog Area CSS
   color: var(--blackColor);
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
   font-size: var(--card-title-fontSize);
   font-weight: 700;
+}
+
+.blog-card .blog-text-area h3 a {
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
 }
 
 .blog-card .blog-text-area p {
@@ -1001,6 +1010,8 @@ Blog Area CSS
 
 .blog-card:hover .blog-text-area h3, .blog-card:hover .blog-text-area a, .blog-card:hover .blog-text-area p, .blog-card:hover .blog-text-area .read-more-btn {
   color: var(--whiteColor);
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
 }
 
 /*================================================

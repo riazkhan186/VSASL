@@ -315,7 +315,7 @@ Services Area CSS
 }
 
 /*================================================
-COunter Area CSS
+Counter Area CSS
 =================================================*/
 .counter-card {
     background-color: #f9f9f9;
@@ -402,10 +402,15 @@ Blog Area CSS
             margin-bottom: 15px;
             color: var(--blackColor);
             transition: .5s ease-in-out;
+            transition-delay: .2s;
             font: {
                 size: var(--card-title-fontSize);
                 weight: 700;
             };
+            a {
+                transition: .5s ease-in-out;
+                transition-delay: .2s;
+            }
         }
         p {
             transition: .5s ease-in-out;
@@ -433,6 +438,7 @@ Blog Area CSS
         .blog-text-area {
             h3,a,p,.read-more-btn {
                 color: var(--whiteColor);
+                transition-delay: 0s;
             }
         }
     }
