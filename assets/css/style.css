@@ -1605,4 +1605,87 @@ FAQ Area CSS
   background-color: var(--mainColor);
   color: var(--whiteColor);
 }
+
+/*================================================
+Team Page CSS
+=================================================*/
+.managing-team-card {
+  margin-top: 30px;
+}
+
+.managing-team-card .managing-team-img-area {
+  height: 100%;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-image: url("../images/team/team1.jpg");
+}
+
+.managing-team-card .managing-team-img-area img {
+  display: none;
+}
+
+.managing-team-card .managing-team-text-area {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.managing-team-card .managing-team-text-area h3 {
+  margin-bottom: 12px;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: var(--fontFamily);
+}
+
+.managing-team-card .managing-team-text-area h6 {
+  line-height: 1;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: var(--fontFamily2);
+}
+
+.managing-team-card .managing-team-text-area p {
+  margin-top: 12px;
+}
+
+.senior-management-card {
+  background-color: var(--whiteColor);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  padding: 30px 15px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.senior-management-card h3 {
+  margin-bottom: 12px;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: var(--fontFamily);
+}
+
+.senior-management-card h5 {
+  margin-bottom: 15px;
+  line-height: 1;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: var(--fontFamily2);
+}
+
+.senior-management-card .team-contact p {
+  margin-bottom: 0px;
+}
+
+.senior-management-card .team-contact p i {
+  color: var(--mainColor);
+}
+
+.senior-management-card .team-contact p a {
+  margin-left: 5px;
+}
+
+.senior-management-card:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
 /*# sourceMappingURL=style.css.map */
