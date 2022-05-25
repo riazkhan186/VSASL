@@ -1107,7 +1107,6 @@ Team Page CSS
         transform: translateY(-10px);
     }
 }
-
 .paginations {
     text-align: center;
     margin-top: 30px;
@@ -1169,6 +1168,49 @@ Team Page CSS
             a {
                 color: var(--whiteColor);
             }
+        }
+    }
+}
+
+/*================================================
+Contact Page CSS
+=================================================*/
+.contact-details-area {
+    box-shadow: 0px 0px 5px 1px #ddd;
+    padding: 20px 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.contact-details-card {
+    position: relative;
+    padding-left: 45px;
+    min-height: 40px;
+    padding-top: 5px;
+    margin-top: 10px;
+    i {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        color: var(--whiteColor);
+        transition: .5s ease-in-out;
+        background-color: var(--mainColor);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    a {
+        font: {
+            size: 15px;
+            weight: 600;
+            family: var(--fontFamily2);
+        };
+    }
+    &:hover {
+        i {
+            transform: rotateY(180deg);
         }
     }
 }
