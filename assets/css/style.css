@@ -1772,6 +1772,40 @@ Team Page CSS
 }
 
 /*================================================
+About Page CSS
+=================================================*/
+.about-c-text-area {
+  max-width: 520px;
+}
+
+.about-c-text-area .quote {
+  position: relative;
+}
+
+.about-c-text-area .quote p {
+  margin-bottom: 12px;
+  text-indent: 35px;
+  line-height: 1.5;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: var(--fontFamily2);
+}
+
+.about-c-text-area .quote i {
+  font-size: 30px;
+  color: rgba(243, 97, 90, 0.8);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.about-c-text-area .quote-intro h4 {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: var(--fontFamily);
+}
+
+/*================================================
 Contact Page CSS
 =================================================*/
 .contact-details-area {
