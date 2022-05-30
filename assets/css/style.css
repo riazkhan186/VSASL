@@ -1774,8 +1774,22 @@ Team Page CSS
 /*================================================
 About Page CSS
 =================================================*/
+.about-c-img {
+  height: 100%;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-image: url("../images/team/about_C.jpg");
+}
+
+.about-c-img img {
+  display: none;
+}
+
 .about-c-text-area {
   max-width: 520px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .about-c-text-area .quote {
@@ -1783,7 +1797,7 @@ About Page CSS
 }
 
 .about-c-text-area .quote p {
-  margin-bottom: 12px;
+  margin-bottom: 15px;
   text-indent: 35px;
   line-height: 1.5;
   font-size: 18px;
@@ -1800,9 +1814,17 @@ About Page CSS
 }
 
 .about-c-text-area .quote-intro h4 {
+  margin-bottom: 3px;
   font-size: 20px;
   font-weight: 600;
   font-family: var(--fontFamily);
+}
+
+.about-c-text-area .quote-intro h6 {
+  margin-bottom: 2px;
+  margin-top: 3px;
+  font-size: 15px;
+  font-family: var(--fontFamily2);
 }
 
 /*================================================
