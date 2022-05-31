@@ -1233,6 +1233,78 @@ About Page CSS
     }
 }
 
+.ipo-left-area {
+    h3 {
+        margin-bottom: 15px;
+        font: {
+            size: 24px;
+            weight: 600;
+            family: var(--fontFamily);
+        };
+        span {
+            font-weight: 400;
+        }
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            position: relative;
+            padding-left: 20px;
+            margin-top: 5px;
+            &::before {
+                content: '';
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                border: 1px solid var(--mainColor);
+                background-color: var(--mainColor);
+                position: absolute;
+                left: 0;
+                top: 9px;
+            }
+            p {
+                font-weight: 600;
+                font-size: 16px;
+                span {
+                    color: var(--blackColor);
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+.ipo-form {
+    h3 {
+        margin-bottom: 5px;
+        font: {
+            size: 24px;
+            weight: 600;
+        };
+    }
+    form {
+        .form-control {
+            margin-top: 20px;
+            border: 1px solid #cccccc;
+            padding: 5px 15px;
+            font: {
+                size: 16px;
+                weight: 400;
+                family: var(--fontFamily2);
+            };
+        }
+        
+        &:focus {
+            border-color: var(--mainColor);
+        }
+        .default-button {
+            width: 100%;
+        }
+    }
+}
+
+
 /*================================================
 Contact Page CSS
 =================================================*/
