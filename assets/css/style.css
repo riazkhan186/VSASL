@@ -919,8 +919,8 @@ Services Area CSS
 .service-card {
   margin-top: 30px;
   padding: 30px 20px 25px;
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+  -webkit-transition: .5s ease-in-out !important;
+  transition: .5s ease-in-out !important;
   -webkit-box-shadow: var(--box-shadow);
           box-shadow: var(--box-shadow);
   background-color: rgba(255, 255, 255, 0.7);
@@ -959,6 +959,10 @@ Services Area CSS
 
 .service-card:hover i, .service-card:hover h3, .service-card:hover a {
   color: var(--whiteColor);
+}
+
+.services {
+  overflow: hidden;
 }
 
 /*================================================
@@ -1014,6 +1018,9 @@ Why Choose Us Area CSS
   margin-top: 30px;
   padding: 25px 20px;
   text-align: center;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 1px 5px -1px #c5c5c550;
+          box-shadow: 0px 1px 5px -1px #c5c5c550;
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   background-color: var(--whiteColor);
@@ -1047,6 +1054,12 @@ Blog Area CSS
 .blog-card .blog-img-area {
   position: relative;
   z-index: 2;
+  overflow: hidden;
+}
+
+.blog-card .blog-img-area img {
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 .blog-card .blog-text-area {
@@ -1101,6 +1114,11 @@ Blog Area CSS
   z-index: 1;
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
+}
+
+.blog-card:hover .blog-img-area img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .blog-card:hover .blog-text-area h3, .blog-card:hover .blog-text-area a, .blog-card:hover .blog-text-area p, .blog-card:hover .blog-text-area .read-more-btn {

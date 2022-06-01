@@ -32,6 +32,12 @@
         meanScreenWidth: "1199"
     });
     
+    new Typewriter('.type', {
+        strings: ['Investment', 'Life'],
+        autoStart: true,
+        loop: true,
+        cursor: '',
+    });
 
     $(".odometer").appear(function (e) {
         var odo = $(".odometer");
@@ -53,6 +59,10 @@
         $(".go-top").on("click", function () {
             $("html, body").animate({ scrollTop: "0" }, 500);
         });
+    });
+
+    AOS.init({
+        duration: 600,
     });
 
     // WOW Animation JS

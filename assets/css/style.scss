@@ -331,7 +331,7 @@ Services Area CSS
 .service-card {
     margin-top: 30px;
     padding: 30px 20px 25px;
-    transition: .5s ease-in-out;
+    transition: .5s ease-in-out !important;
     box-shadow: var(--box-shadow);
     background-color: rgba($color: #ffffff, $alpha: 0.7);
     text-align: center;
@@ -362,6 +362,9 @@ Services Area CSS
             color: var(--whiteColor);
         }
     }
+}
+.services {
+    overflow: hidden;
 }
 
 /*================================================
@@ -415,6 +418,9 @@ Why Choose Us Area CSS
     margin-top: 30px;
     padding: 25px 20px;
     text-align: center;
+    border-radius: 15px;
+    // border: 1px solid rgba($color: #e63434, $alpha: 0.3);
+    box-shadow: 0px 1px 5px -1px #c5c5c550;
     transition: .5s ease-in-out;
     background-color: var(--whiteColor);
     h3 {
@@ -443,6 +449,10 @@ Blog Area CSS
     .blog-img-area {
         position: relative;
         z-index: 2;
+        overflow: hidden;
+        img {
+            transition: .5s ease-in-out;
+        }
     }
     .blog-text-area {
         padding: 30px 20px;
@@ -489,7 +499,11 @@ Blog Area CSS
     }
     
     &:hover {
-        
+        .blog-img-area {
+            img {
+                transform: scale(1.1);
+            }
+        }
         .blog-text-area {
             h3,a,p,.read-more-btn {
                 color: var(--whiteColor);
