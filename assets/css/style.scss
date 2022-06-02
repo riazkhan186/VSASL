@@ -789,6 +789,18 @@ BO Account Opening Area CSS
                     }
                 }
             }
+            .ac-book-form {
+                margin-top: 20px;
+                display: inline-block;
+                color: var(--blackColor);
+                font: {
+                    size: 15px;
+                    family: var(--fontFamily2);
+                };
+                a {
+                    font-weight: 600;
+                }
+            }
         }
     }
 }

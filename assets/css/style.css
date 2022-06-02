@@ -1425,6 +1425,18 @@ BO Account Opening Area CSS
   font-size: 13px;
 }
 
+.bo-account-content .tab-content .bo-opening-tab-content .ac-book-form {
+  margin-top: 20px;
+  display: inline-block;
+  color: var(--blackColor);
+  font-size: 15px;
+  font-family: var(--fontFamily2);
+}
+
+.bo-account-content .tab-content .bo-opening-tab-content .ac-book-form a {
+  font-weight: 600;
+}
+
 /*================================================
 Online Trading Area CSS
 =================================================*/
