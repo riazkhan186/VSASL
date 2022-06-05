@@ -535,11 +535,13 @@ Footer Area CSS
     h1 {
         line-height: 1;
         margin-bottom: 0;
-        padding-top: 17px;
+        padding-top: 20px;
         padding-left: 10px;
-        color: var(--mainColor);
+        background: linear-gradient(to top, #E97A56, #AD2470,#D21C64,#DD1861);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         font: {
-            size: 30px;
+            size: 40px;
             weight: 700;
         }
     }
@@ -728,6 +730,19 @@ Inner Pages Banner Area CSS
             size: 42px;
             weight: 700;
         };
+    }
+}
+
+.dp-ragistration-no {
+    ul {
+        li {
+            p {
+                span {
+                    color: var(--blackColor);
+                    font-weight: 600;
+                }
+            }
+        }
     }
 }
 

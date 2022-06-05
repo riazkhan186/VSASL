@@ -1155,10 +1155,13 @@ Footer Area CSS
 .footer-logo h1 {
   line-height: 1;
   margin-bottom: 0;
-  padding-top: 17px;
+  padding-top: 20px;
   padding-left: 10px;
-  color: var(--mainColor);
-  font-size: 30px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#E97A56), color-stop(#AD2470), color-stop(#D21C64), to(#DD1861));
+  background: linear-gradient(to top, #E97A56, #AD2470, #D21C64, #DD1861);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
   font-weight: 700;
 }
 
@@ -1362,6 +1365,11 @@ Inner Pages Banner Area CSS
   margin-bottom: 0;
   font-size: 42px;
   font-weight: 700;
+}
+
+.dp-ragistration-no ul li p span {
+  color: var(--blackColor);
+  font-weight: 600;
 }
 
 /*================================================
