@@ -1135,8 +1135,7 @@ Blog Area CSS
 Footer Area CSS
 =================================================*/
 .footer-bg {
-  background-image: -webkit-gradient(linear, left top, right top, from(#f3615a), color-stop(#a31f18d8), color-stop(#a31f18d8), to(#f3615a));
-  background-image: linear-gradient(to right, #f3615a, #a31f18d8, #a31f18d8, #f3615a);
+  background-color: black;
 }
 
 .footer-logo-area p {
@@ -1158,7 +1157,7 @@ Footer Area CSS
   margin-bottom: 0;
   padding-top: 17px;
   padding-left: 10px;
-  color: var(--whiteColor);
+  color: var(--mainColor);
   font-size: 30px;
   font-weight: 700;
 }
