@@ -1157,8 +1157,8 @@ Footer Area CSS
   margin-bottom: 0;
   padding-top: 20px;
   padding-left: 10px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#E97A56), color-stop(#AD2470), color-stop(#D21C64), to(#DD1861));
-  background: linear-gradient(to top, #E97A56, #AD2470, #D21C64, #DD1861);
+  background: -webkit-gradient(linear, left bottom, left top, from(#E97A56), color-stop(#AD2470), color-stop(#D21C64), color-stop(#D21C64), to(#DD1861));
+  background: linear-gradient(to top, #E97A56, #AD2470, #D21C64, #D21C64, #DD1861);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 40px;
