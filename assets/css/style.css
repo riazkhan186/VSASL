@@ -234,8 +234,8 @@ p:last-child {
 }
 
 .back span:nth-child(6) {
-  -webkit-animation-delay: .6s;
-          animation-delay: .6s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
 }
 
 .default-button {
