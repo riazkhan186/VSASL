@@ -85,6 +85,49 @@
   }
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  :root {
+    --card-title-fontSize: 18px;
+    --fontSize: 14px;
+  }
+  .section-title h3 {
+    font-size: 32px;
+  }
+  .banner-area .banner-text-area {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .banner-area .banner-text-area h1 {
+    font-size: 48px;
+  }
+  .service-card h3 {
+    font-size: 16px;
+  }
+  .pl-70 {
+    padding-left: 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  :root {
+    --card-title-fontSize: 22px;
+    --fontSize: 14px;
+  }
+  .section-title h3 {
+    font-size: 38px;
+  }
+  .banner-area .banner-text-area {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  .footer-contact li a {
+    font-size: 14px;
+  }
+  .pl-70 {
+    padding-left: 35px;
+  }
+}
+
 @media only screen and (min-width: 1550px) {
   .banner-area .banner-text-area {
     padding-top: 280px;

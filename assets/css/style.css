@@ -785,7 +785,7 @@ Header Responsive Area CSS
   }
 }
 
-@media only screen and (max-width: 1199px) {
+@media only screen and (max-width: 991px) {
   .main-responsive-nav {
     background-color: #ffffff;
     height: 65px;

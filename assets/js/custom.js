@@ -15,7 +15,7 @@
     
     // Mean Menu
     $(".mean-menu").meanmenu({
-        meanScreenWidth: "1199"
+        meanScreenWidth: "991"
     });
     
     new Typewriter('.type', {
