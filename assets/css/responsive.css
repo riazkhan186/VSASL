@@ -3,7 +3,7 @@
     Default CSS
     =================================================*/
   :root {
-    --fontSize: 14px;
+    --fontSize: 13px;
     --card-title-fontSize: 18px;
   }
   .ptb-100 {
@@ -35,11 +35,48 @@
   .pr-20 {
     padding-right: 0px;
   }
-  .default-section-title h3 {
-    font-size: 20px;
-  }
   .section-content {
     margin-top: 0px;
+  }
+  .section-title h3 {
+    font-size: 20px;
+  }
+  .banner-area .banner-text-area {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .banner-area .banner-text-area h1 {
+    font-size: 32px;
+  }
+  .banner-area .banner-text-area h5, .banner-area .banner-text-area h3 {
+    font-size: 16px;
+  }
+  .index-about-img-area {
+    background-image: unset;
+  }
+  .index-about-img-area img {
+    display: block;
+  }
+  .about-text-area {
+    margin-top: 30px;
+    margin-left: 0;
+  }
+  .service-card h3 {
+    font-size: 16px;
+  }
+  .pl-70 {
+    padding-left: 0;
+  }
+  .footer-option-area h3 {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  .footer-option-list li a {
+    font-size: 13px;
+  }
+  .footer-contact li a {
+    font-size: 13px;
   }
 }
 
@@ -48,7 +85,8 @@
     Default CSS
     =================================================*/
   :root {
-    --card-title-fontSize: 20px;
+    --card-title-fontSize: 18px;
+    --fontSize: 14px;
   }
   .ptb-100 {
     padding-top: 80px;
@@ -77,11 +115,39 @@
     padding-left: 0px;
     padding-right: 0px;
   }
+  .ml-30 {
+    margin-left: 0;
+  }
   .section-content {
     margin-top: 0px;
   }
-  .default-section-title h3 {
-    font-size: 29px;
+  .section-title h3 {
+    font-size: 32px;
+  }
+  .banner-area .banner-text-area {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .banner-area .banner-text-area h1 {
+    font-size: 36px;
+  }
+  .banner-area .banner-text-area h5, .banner-area .banner-text-area h3 {
+    font-size: 16px;
+  }
+  .index-about-img-area {
+    background-image: unset;
+  }
+  .index-about-img-area img {
+    display: block;
+  }
+  .about-text-area {
+    margin-top: 30px;
+  }
+  .service-card h3 {
+    font-size: 16px;
+  }
+  .pl-70 {
+    padding-left: 0;
   }
 }
 

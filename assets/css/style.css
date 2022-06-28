@@ -865,7 +865,7 @@ Home Page Banner Area CSS
 .banner-area .banner-text-area {
   text-align: center;
   position: relative;
-  z-index: 2;
+  z-index: 1;
   padding-top: 180px;
   padding-bottom: 180px;
 }
@@ -1047,6 +1047,10 @@ Why Choose Us Area CSS
 .why-we-card:hover {
   -webkit-transform: translateY(-15px);
           transform: translateY(-15px);
+}
+
+.why-choose-us, .blog {
+  overflow: hidden;
 }
 
 /*================================================

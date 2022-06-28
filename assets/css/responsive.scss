@@ -3,7 +3,7 @@
     Default CSS
     =================================================*/
     :root{
-        --fontSize: 14px;
+        --fontSize: 13px;
         --card-title-fontSize: 18px;
     }
     .ptb-100 {
@@ -39,14 +39,79 @@
     .pr-20{
         padding-right: 0px;
     }
-    .default-section-title {
+
+    .section-content{
+        margin-top: 0px;
+    }
+
+    .section-title {
         h3 {
             font-size: 20px;
         }
     }
-    .section-content{
-        margin-top: 0px;
+
+    .banner-area {
+        .banner-text-area {
+            padding: {
+                top: 50px;
+                bottom: 50px;
+            };
+            h1 {
+                font-size: 32px;
+            }
+            h5,h3 {
+                font-size: 16px;
+            }
+        }
     }
+
+    .index-about-img-area {
+        background-image: unset;
+        img {
+            display: block;
+        }
+    }
+
+    .about-text-area {
+        margin-top: 30px;
+        margin-left: 0;
+    }
+
+    .service-card {
+        h3 {
+            font-size: 16px;
+        }
+    }
+    
+    .pl-70 {
+        padding-left: 0;
+    }
+
+    .footer-option-area {
+        h3 {
+            font-size: 20px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+    }
+
+    .footer-option-list {
+        li {
+            a {
+                font-size: 13px;
+            }
+        }
+    }
+
+    .footer-contact {
+        li {
+            a {
+                font-size: 13px;
+            }
+        }
+    }
+
+
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
 
@@ -56,8 +121,9 @@
     /*================================================
     Default CSS
     =================================================*/
-    :root{
-        --card-title-fontSize: 20px;
+    :root {
+        --card-title-fontSize: 18px;
+        --fontSize: 14px;
     }
     .ptb-100 {
         padding: {
@@ -92,14 +158,60 @@
             right: 0px;
         };
     }
+
+    .ml-30 {
+        margin-left: 0;
+    }
+
     .section-content{
         margin-top: 0px;
     }
-    .default-section-title {
-        h3{
-            font-size: 29px;
+
+    .section-title {
+        h3 {
+            font-size: 32px;
         }
     }
+
+    .banner-area {
+        .banner-text-area {
+            padding: {
+                top: 80px;
+                bottom: 80px;
+            };
+            h1 {
+                font-size: 36px;
+            }
+            h5,h3 {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .index-about-img-area {
+        background-image: unset;
+        img {
+            display: block;
+        }
+    }
+
+    .about-text-area {
+        margin-top: 30px;
+    }
+
+    .service-card {
+        h3 {
+            font-size: 16px;
+        }
+    }
+    
+    .pl-70 {
+        padding-left: 0;
+    }
+
+
+
+
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     :root {
