@@ -3,29 +3,15 @@
     $(window).on("load", function (event) {
         $(".back").delay(500).fadeOut(500);
     });
-    // $(".testimonial-slider-one").owlCarousel({
-    //     nav: false,
-    //     dots: true,
-    //     loop: true,
-    //     margin: 25,
-    //     items: 1,
-    //     thumbs: false,
-    //     smartSpeed: 1300,
-    //     autoplay: false,
-    //     autoplayTimeout: 4000,
-    //     autoplayHoverPause: false,
-    //     responsiveClass: true,
-    //     autoHeight: true,
-    // });
     
-        // for sticky navbar
-        $(window).scroll(function () {
-            if ($(window).scrollTop() > 150) {
-                $(".navbar-area").addClass("sticky");
-            } else {
-                $(".navbar-area").removeClass("sticky");
-            }
-        });
+    // for sticky navbar
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 150) {
+            $(".navbar-area").addClass("sticky");
+        } else {
+            $(".navbar-area").removeClass("sticky");
+        }
+    });
     
     // Mean Menu
     $(".mean-menu").meanmenu({
@@ -73,3 +59,20 @@
         wow.init();
     }
 })(jQuery);
+
+
+function sendDepositEmail() {
+    Email.send({
+        SecureToken: "64e29f2a-1b91-4ccf-8043-505b2f77f1bb",
+        // Host : "smtp.elasticemail.com",
+        // Username : "riazuddinbappy52@gmail.com",
+        // Password : "C62DEE3654E3660D723ECC605B7695AFA756",
+        To : 'riazuddinbappy@gmail.com',
+        From : document.getElementById("client_email").value,
+        Subject : "Deposit",
+        Body : "And this is the body"
+    }).then(
+        message => alert(message)
+    );
+    
+}
